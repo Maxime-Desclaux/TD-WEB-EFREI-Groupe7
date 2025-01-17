@@ -1,0 +1,62 @@
+/* Style global */
+/* Style général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Centrer le titre de la ville */
+main h1 {
+    text-align: center; /* Centrer horizontalement */
+    font-size: 36px; /* Taille plus grande pour le titre */
+    color: #222;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Conteneur pour les commentaires */
+main > div {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 10px;
+}
+
+/* Style pour chaque commentaire */
+main > div > div {
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image */
+main > div > div img {
+    width: 250px; /* Plus grande largeur */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px; /* Espace entre l'image et le texte */
+    object-fit: cover;
+}
+
+/* Texte */
+main > div > div > div {
+    flex: 1;
+}
+
+/* Titre */
+main > div > div > div h2 {
+    margin: 0;
+    font-size: 24px; /* Titre plus grand */
+    color: #222;
+}
+
+/* Auteur et date */
+main > div > div > div p {
+    margin: 10px 0;
+    font-size: 16px; /* Texte*/
+}

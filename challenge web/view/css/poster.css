@@ -1,0 +1,100 @@
+/* Style global */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header / Navbar */
+header {
+    position: fixed; /* Navbar fixée en haut */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #17a2b8; /* Couleur principale */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour séparer le header */
+    z-index: 1000; /* Toujours au-dessus du contenu */
+}
+
+/* Logo */
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Liens de navigation */
+header nav {
+    display: flex;
+    gap: 20px; /* Espacement entre les liens */
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #d4f1f4; /* Couleur au survol */
+}
+
+/* Style du conteneur principal */
+main {
+    margin-top: 80px; /* Espace pour éviter que le contenu ne passe sous la navbar */
+    padding: 100px;
+    text-align: center;
+}
+
+/* Autres styles pour le formulaire */
+/* Autres styles pour le formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Augmenter l'espacement entre les éléments */
+    margin: 0 auto;
+    max-width: 800px; /* Largeur du formulaire */
+    min-height: 600px; /* Hauteur du formulaire */
+    background-color: #fff;
+    padding: 50px; /* Ajouter un rembourrage plus large */
+    border-radius: 50px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    font-size: 18px; /* Taille globale du texte dans le formulaire */
+}
+
+/* Champs de formulaire */
+form input,
+form select,
+form textarea {
+    width: 100%; /* Champ prend toute la largeur disponible */
+    padding: 15px; /* Ajouter un rembourrage plus grand */
+    font-size: 18px; /* Texte plus grand */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Bouton du formulaire */
+form button {
+    padding: 15px;
+    font-size: 20px; /* Texte du bouton plus grand */
+    font-weight: bold;
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #138496; /* Couleur au survol */
+}

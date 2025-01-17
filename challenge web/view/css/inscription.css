@@ -1,0 +1,98 @@
+/* Corps de la page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa; /* Fond clair */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+    min-height: 100vh;
+    padding-top: 250px; /* Ajoute un espace pour ne pas cacher la navbar */
+}
+
+/* Style de la navbar (fixée en haut de la page) */
+.navbar {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #17a2b8; /* Bleu cyan */
+    color: white;
+    font-size: 20px;
+    position: fixed; /* Fixe la navbar en haut */
+    top: 0;
+    left: 0;
+    text-align: left;
+    z-index: 1000; /* S'assure que la navbar soit au-dessus des autres éléments */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+/* Titre de la page */
+h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Formulaire d'inscription */
+form {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 380px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation au survol du formulaire */
+form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Champs de saisie */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus sur les champs de saisie */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #17a2b8;
+    outline: none;
+}
+
+/* Bouton d'inscription */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #17a2b8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol du bouton */
+button:hover {
+    background-color: #138496;
+    transform: translateY(-3px);
+}
+
+/* Ajout de l'effet de focus au bouton */
+button:focus {
+    outline: none;
+}
